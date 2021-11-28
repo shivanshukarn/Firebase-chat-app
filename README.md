@@ -1,4 +1,4 @@
 # Firebase-chat-app
 This is a chat app created using JavaScript and Firebase
 
-![App Preview](https://user-images.githubusercontent.com/83956444/143735485-b26b684e-1615-41ec-a2cc-6adc484edafd.png)
+![App_Preview](https://user-images.githubusercontent.com/83956444/143735658-b602c83b-220b-450d-9b62-3b789ec459d9.png)
