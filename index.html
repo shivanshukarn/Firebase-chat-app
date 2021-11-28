@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Firebase Chat App</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body class="bg-dark" style="overflow-x: hidden;">
+
     <div id="chat" class="container">
-        <h1 class="text-center mt-2" style="color: #fff;">Chat App in JavaScript with Firebase</h1>
+        <h1 class="text-center mt-2 mb-2" style="color: #fff;">JavaScript Chat App with Firebase</h1>
+
+        <div id="status"></div>
+
         <div class="mt-5 mb-5" id="messages"></div>
         <div class="position-fixed bottom-0 mb-3" style="width: 80%;">
             <form id="send-message">
@@ -30,5 +35,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="Config.js"></script>
+    <script src="GetMsg.js"></script>
 </body>
 </html>
