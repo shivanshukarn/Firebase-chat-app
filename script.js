@@ -14,7 +14,7 @@ function postChat(e) {
 }
 
 function reply() {
-  document.getElementById("chat-txt").value = ("(Reply:" + messages.msg + ")") + "  ";
+  document.getElementById("chat-txt").value = ("(Reply:" + messages.msg + ")") + "  -  ";
   document.getElementById("chat-txt").focus();
 }
 

@@ -8,7 +8,7 @@ fetchChat.on("child_added", function (snapshot) {
   // const msg = "<li>" + messages.usr + " : " + messages.msg + "</li>";
   // const usrnm = messages.usr;
   // let usrmsg = messages.msg;
-  const msg = `<div class="card mt-2 ms-2 text-white bg-dark" style="width: 18rem; border: 2px solid #fff;" key="${msgKey}">
+  const msg = `<div class="card mt-2 ms-2 text-white bg-dark msgDiv" style="width: 18rem; border: 2px solid #fff;" id="${msgKey}" key="${msgKey}">
   <div class="card-body">
     <h5 class="card-title">${messages.usr}</h5>
     <p class="card-text">${messages.msg}</p>
