@@ -26,6 +26,7 @@ if (username === null || username === "" || username === undefined){
   Status = "Danger"
   StatusMsg = "Username invalid"
   document.getElementById("send-message").style.display = "none"
+  alert("You can't chat without USERNAME ; click ok , refresh the page and type username")
 }else{
   Statusty = "success"
   Status = "Online"
