@@ -25,6 +25,7 @@ if (username === null || username === "" || username === undefined){
   Statusty = "danger"
   Status = "Danger"
   StatusMsg = "Username invalid"
+  document.getElementById("send-message").style.display = "none"
 }else{
   Statusty = "success"
   Status = "Online"
