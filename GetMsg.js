@@ -1,5 +1,6 @@
-let messages;
-let msgKey;
+if(Statusty === "success"){
+  let messages;
+  let msgKey;
 const fetchChat = db.ref("messages/");
 fetchChat.on("child_added", function (snapshot) {
   window.scrollTo(0,document.body.scrollHeight);
@@ -12,5 +13,10 @@ fetchChat.on("child_added", function (snapshot) {
     <button class="btn btn-primary" onclick="reply()">Reply</button>
   </div>
 </div>`
-  document.getElementById("messages").innerHTML += msg;
+document.getElementById("messages").innerHTML += msg;
 });
+}else{
+  document.getElementById("messages").innerHTML += `<div class="alert alert-danger" role="alert">
+  Username is necessary for chat with someone! , please <a href="/">click here</a> for refreshing the page and then enter your name
+</div>`;
+}
