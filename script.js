@@ -1,4 +1,9 @@
 const username = prompt("What's your name?");
+const password = prompt("Enter the password")
+// let username = "Shivanshu"
+// let password = "jschat"
+
+const delbtn = document.getElementById('delbtn')
 
 document.getElementById("send-message").addEventListener("submit", postChat);
 function postChat(e) {
@@ -17,11 +22,16 @@ function reply() {
   document.getElementById("chat-txt").value = ("(Reply:" + messages.msg + ")") + "  -  ";
   document.getElementById("chat-txt").focus();
 }
+delbtn.addEventListener('click', () => {
+  // console.log("Clicked on delete message")
+  db.ref('messages/').remove()
+  document.getElementById("messages").innerHTML = ""
+})
 
 let Statusty;
 let Status;
 let StatusMsg;
-if (username === null || username === "" || username === undefined){
+if (username === null || username === "" || username === undefined || password != "jschat"){
   Statusty = "danger"
   Status = "Danger"
   StatusMsg = "Username invalid"
