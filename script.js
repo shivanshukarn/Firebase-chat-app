@@ -29,7 +29,6 @@ function reply() {
 delbtn.addEventListener('click', () => {
   // console.log("Clicked on delete message")
   db.ref('messages/').remove()
-  document.getElementById("messages").innerHTML += msg
 })
 
 let Statusty;
